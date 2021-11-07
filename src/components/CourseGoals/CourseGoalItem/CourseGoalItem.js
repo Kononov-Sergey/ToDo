@@ -11,8 +11,9 @@ function CourseGoalItem(props) {
   };
 
   return (
-    <li className="goal-item" onClick={deleteHandler}>
+    <li className="goal-item">
       {props.children}
+      <div className="close-icon" onClick={deleteHandler}></div>
     </li>
   );
 }

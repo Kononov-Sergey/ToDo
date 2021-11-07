@@ -1,8 +1,37 @@
 .goal-item {
   margin: 1rem 0;
+  display: block;
   background: #8b005d;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   color: white;
   padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-icon {
+  width: 1.5rem;
+  height: 1.5rem;
   cursor: pointer;
+  position: relative;
+}
+
+.close-icon::after,
+.close-icon::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  right: 0.2rem;
+  top: 0.65rem;
+}
+
+.close-icon::after {
+  transform: rotate(45deg);
+}
+
+.close-icon::before {
+  transform: rotate(-45deg);
 }
